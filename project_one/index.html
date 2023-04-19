@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Football survey</title>
+  </head>
+  <body>
+    <div>
+        <main>
+            <header>
+                <h1 id="title">FOOTBALL SURVEY</h1>
+                <p id="description">Please let's keep in touch. Thank you.</p>
+            </header>
+            <section>
+                <form id="survey-form">
+                    <label id="name-label" for="name">Name</label>
+                    <input placeholder="Enter your name" required type="text" id="name" />
+                    <label id="email-label" for="email">Email</label>
+                    <input placeholder="Enter your Email" required type="email" id="email" />
+                    <label id="number-label" for="age">Age (optional)</label>
+                    <input placeholder="Age" type="number" id="number" min="18" max="60"/>
+                    <!-- Teams -->
+                    <label for="teams">Teams</label>
+                    <select id="dropdown" name="teams">
+                        <option value="Rmadrid">Real madrid</option>
+                        <option value="Barcelona">Barcelona FC</option>
+                        <option value="Manu">Manchester United</option>
+                    </select>
+                    <!-- Radio buttons -->
+                    <fieldset>
+                        <legend>Do you like football?</legend>
+                        <label checked for="yes"><input value="yes" name="name" type="radio"/>Yes</label>
+                        <label for="no"><input value="no" name="name" type="radio"/>No</label>
+                    </fieldset>
+                    <!-- Check Boxes -->
+                    <fieldset>
+                        <legend>Select your favorite player.</legend>
+                        <input checked type="checkbox" value="CR7" id="CR7"/> <label for="CR7">Cristiano Ronaldo</label>
+                        <input type="checkbox" value="messi" id="messi"/> <label for="messi">Messi</label>
+                        <input type="checkbox" value="son" id="son"/> <label for="son">Son Heung Min</label>
+                    </fieldset>
+                    <textarea>
+                        Enter your comment here...
+                    </textarea>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+           <p>No copyright - Jung Ik Choi</p>
+        </footer>
+    </div>
+  </body>
+</html>
